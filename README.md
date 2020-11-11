@@ -40,6 +40,22 @@ $$ z_{next} = z - \frac{z^2 -x}{2z} $$
 
 <br /> <br />
 
+Task Two
+-------------------------------------------------------------------------------------------------------------------
+
+#### Task: Use scipy.stats to verify this value and calculate the associated p value
+-------------------------------------------------------------------------------
+
+The Chi-squared test for independence is a statistical hypothesis test like a t-test. It is used to analyse whether two categorical variables are independent. The Wikipedia article in the research section, gives the table below as an example [4],
+stating the Chi-squared value based on it is approximately 24.6. <br>
+
+|             | A   | B   | C   | D   | Total  |
+| ----------- | ----| ----| ----| ----|--------|
+| White collar| 90  | 60  | 104 | 95  | 349    |
+| Blue collar | 30  | 50  | 51  | 20  | 151    |
+| No collar   | 30  | 40  | 45  | 35  | 150    |
+| Total       | 150 | 150 | 200 | 150 | 650    |
+
 Research
 -------------------------------------------------------------------------------------------------------------------
 
