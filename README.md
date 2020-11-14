@@ -57,11 +57,18 @@ stating the Chi-squared value based on it is approximately 24.6. <br>
 
 The chi squared tests are used to check if there is a statistical difference between the expected and observed frequencies in a contigency table. It tests the association between the two criteria of association.  
 
-The code below is verifying that the chi square value is correct and also prints out the p value. The code first creates a table with the data given and prints it out using the panda library.[2] The table that is printed is the same table as seen above. The data is stored in a variable named "data". We next use the scipy.stats library to figure out the Expected value, the p value, the actual chi square value and the degree of freedom. We use the  " stats.chi2_contingency(data)"[4] to get these values. This method returns all those values based on the marginal sums under the assumption of independence. The assumptions are:[3]
+I originally had the code that it would use the panda library to create a dataframe using the the relevant values and output the result. The table that was printed was very similar to the one shown above. The table and the values were saved in a variable called "data", which woud be used later by the scipy.stats library. I then realised that I was only allowed to use the scipy.stats library to perform the required calculations. I decided to change the code a little bit to better fit the requirements. I did this by creating a variable and adding the dataset from the table into it. The dataset was saved row by row: 
 
-1. the observations are independent and
-2. normally distributed
+```
+#data to be inserted into the columns
+data = [[90,60,104,95], [30,50,51,20],[30,40,45,35]]
+```
 
+The data is then used to get the four values printed out by the stats.chi2_contingency(data) method. These four values are the chi squared values, the p value, the degrees of freedom and the expected frequencies. These values were then printed out and the chi squared value printed was the same as the one we were trying to verify.
+
+```
+chi2, p, dof, ex = stats.chi2_contingency(data)
+```
 
 Research
 -------------------------------------------------------------------------------------------------------------------
