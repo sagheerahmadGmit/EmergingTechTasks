@@ -99,3 +99,6 @@ http://mmcmodinagar.ac.in/econtent/zoology/CHI_SQUARE_TESTS.pdf
 
 [4] Scipy.stats contigency
 https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.chi2_contingency.html 
+
+[5] The degrees of freedom  
+https://en.wikipedia.org/wiki/Degrees_of_freedom_(statistics)  
