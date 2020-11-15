@@ -70,6 +70,28 @@ The data is then used to get the four values printed out by the stats.chi2_conti
 chi2, p, dof, ex = stats.chi2_contingency(data)
 ```
 
+The values that are printed are: 
+
+```
+The approximate chi squared value is: 24.6 
+
+The associated p value is: 0.0004098425861096696 
+
+The Degree of Freedom is: 6 
+
+The expected frequencies are: 
+ [[ 80.53846154  80.53846154 107.38461538  80.53846154]
+ [ 34.84615385  34.84615385  46.46153846  34.84615385]
+ [ 34.61538462  34.61538462  46.15384615  34.61538462]] 
+ ```
+ 
+The chi squared value has been rounded to one decimal place. It was originally, 24.5712028585826.
+
+The library that was used for this task was te scipy.stats. This library contains a large number of probability distributions as well as a growing library of statistical functions.[6] The P value probability of obtaining test results at least as extreme as the results actually observed, under the assumption that the null hypothesis is correct. If the p value is greater than 0.05 that means the null hypothesis is true and if the value is less than or equal to 0.05 than the hypothesis should be rejected.[7]
+
+The code and results verify that the values are correct.
+
+
 Research
 -------------------------------------------------------------------------------------------------------------------
 #### Task: Calculate the square root of 2 to one hundred decimal places
@@ -109,3 +131,9 @@ https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.chi2_contingenc
 
 [5] The degrees of freedom  
 https://en.wikipedia.org/wiki/Degrees_of_freedom_(statistics)  
+
+[6] Stats scipy library  
+https://docs.scipy.org/doc/scipy/reference/stats.html  
+
+[7] P value  
+https://en.wikipedia.org/wiki/P-value  
