@@ -4,7 +4,7 @@
 Introduction
 -------------------------------------------------------------------------------------------------------------------
 
-This Jupyter Notebook contains the tasks for the module "Emerging Technology" in 4th year Software Development Course. It is written in the Python programming language. It will contain the programs for the four different tasks that we will be given. 
+This Jupyter Notebook contains the tasks for the module "Emerging Technology" in 4th year Software Development Course. It is written in the Python programming language. It will contain the programs for the four different tasks that we will be given.
 
 The first task is: 
 
@@ -22,6 +22,12 @@ are independent. The Wikipedia article gives the table below as an example [4],
 stating the Chi-squared value based on it is approximately 24.6. Use scipy.stats
 to verify this value and calculate the associated p value. You should include a short
 note with references justifying your analysis in a markdown cell.
+```
+
+The third task is: 
+
+```
+The standard deviation of an array of numbers x is calculated using numpy as np.sqrt(np.sum((x - np.mean(x))**2)/len(x)) . However, Microsoft Excel has two different versions of the standard deviation calculation, STDDEV.P and STDDEV.S . The STDDEV.P function performs the above calculation but in the STDDEV.S calculation the division is by len(x)-1 rather than len(x) . Research these Excel functions, writing a note in a Markdown cell about the difference between them. Then use numpy to perform a simulation demonstrating that the STDDEV.S calculation is a better estimate for the standard deviation of a population when performed on a sample. Note that part of this task is to figure out the terminology in the previous sentence.
 ```
 
 
@@ -90,6 +96,15 @@ The chi squared value has been rounded to one decimal place. It was originally, 
 The library that was used for this task was te scipy.stats. This library contains a large number of probability distributions as well as a growing library of statistical functions.[6] The P value probability of obtaining test results at least as extreme as the results actually observed, under the assumption that the null hypothesis is correct. If the p value is greater than 0.05 that means the null hypothesis is true and if the value is less than or equal to 0.05 than the hypothesis should be rejected.[7]
 
 The code and results verify that the values are correct.
+
+
+Task Three
+-------------------------------------------------------------------------------------------------------------------
+
+#### Task: Research the excel functions and use numpy to perform a simulation demonstrating that the STDDEV.S calculation is a better estimate for the standard deviation of a population when performed on a sample.
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+
 
 
 Research
