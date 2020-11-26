@@ -101,9 +101,41 @@ The code and results verify that the values are correct.
 Task Three
 -------------------------------------------------------------------------------------------------------------------
 
-#### Task: Research the excel functions and use numpy to perform a simulation demonstrating that the STDDEV.S calculation is a better estimate for the standard deviation of a population when performed on a sample.
+#### Task: Research the excel functions and use numpy to perform a simulation demonstrating that the STDEV.S calculation is a better estimate for the standard deviation of a population when performed on a sample.
 -------------------------------------------------------------------------------------------------------------------------------------------
+When dealing with statistical data it is evident that there are two data sets that can be used to get the standard deviation. There are population and sample data sets. In this task I will try to differenciate between the two and try to explain why STDDEV.S calculation is a better estimate for the standard deviation of a population when performed on a sample.
 
+Firstly lets get the defenition of both of them: [1]
+
+A population is:
+
+```
+A population is the entire group that you want to draw conclusions about.
+```
+
+While a sample is: 
+
+```
+A sample is the specific group that you will collect data from. The size of the sample is always less than the total size of the population.
+```
+
+It is always a good idea to know what data set to use when getting the standard deviation. As we already know there is only one difference between the two formulas. The population data set uses the formula:  
+  
+```np.sqrt(np.sum((x - np.mean(x)) ** 2)/len(x))```
+
+while the sample data set uses the formula:  
+
+```np.sqrt(np.sum((x - np.mean(x)) ** 2)/len(x)) -1```
+
+Consider the following:
+
+(A) You are an English teacher in a secondary school and you want to do a statistical analysis on all the exam results from your class in the last year. This will be a population data set because In this case you only need to get the data from your own class and not all the english classes in the school. The intent is only to estimate the students in your own class and because of this you have all the population.[2]
+
+(B) You are an English teacher in a secondary school and you want to do a statistical analysis on all the english exam results in the last year across the world. This will be a sample data set because the data set is huge. There is no way of getting the full data from such a huge dataset. In this case you will have to use a smaller dataset and make a generalization of your findings.[2]
+
+According to Excel, It is better to use the population dataset because it gets the standard deviation of the entire population. The syntax for using the population sample data is "STDEV.P(number1,number2,...)". The syntax for for the sample data is very similar but the p is replaced by a s, "STDEV.S(number1,number2,...)".[3][4].
+
+There is a slight difference in the population and sample dataset. This can be seen in the code cell. The small difference in the answers allows the sample data to get a better mathematical estimate of the population. It statistically gives a better estimate than population due to it working with only a small sample than the entire population.
 
 
 How to run
@@ -176,3 +208,18 @@ https://docs.scipy.org/doc/scipy/reference/stats.html
 
 [7] P value  
 https://en.wikipedia.org/wiki/P-value  
+
+#### Task: The difference between stdev.p and stdev.s
+-------------------------------------------------------------------------------
+
+[1]The difference between population and sample:   
+[https://www.scribbr.com/methodology/population-vs-sample/  ]  
+  
+[2]Population vs Sample Data:  
+[http://mathbitsnotebook.com/Algebra1/StatisticsData/STPopSample.html  ]  
+    
+[3]How to use stdev.p in excel:  
+[https://www.exceltip.com/statistical-formulas/how-to-use-excel-stdev-p-function.html]  
+  
+[4]How to use stdev.s in excel:  
+[https://www.exceltip.com/statistical-formulas/how-to-use-stdev-s-function-in-excel.html]  
