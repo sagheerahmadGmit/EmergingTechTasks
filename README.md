@@ -106,6 +106,30 @@ Task Three
 
 
 
+How to run
+-------------------------------------------------------------------------------------------------------------------
+
+In order to run these tasks please do the following:
+
+Clone this repository:
+```
+git clone https://github.com/sagheerahmadGmit/EmergingTechTasks
+```
+
+After cloning, open up the terminal and type:
+```
+jupyter notebook
+```
+
+Open the tasks notebook and run the cells by either:
+```
+shift enter
+```
+or
+```
+press kernal at the top of the notebook and press "restart and run all
+```
+
 
 Research
 -------------------------------------------------------------------------------------------------------------------
