@@ -27,7 +27,13 @@ note with references justifying your analysis in a markdown cell.
 The third task is: 
 
 ```
-The standard deviation of an array of numbers x is calculated using numpy as np.sqrt(np.sum((x - np.mean(x))**2)/len(x)) . However, Microsoft Excel has two different versions of the standard deviation calculation, STDDEV.P and STDDEV.S . The STDDEV.P function performs the above calculation but in the STDDEV.S calculation the division is by len(x)-1 rather than len(x) . Research these Excel functions, writing a note in a Markdown cell about the difference between them. Then use numpy to perform a simulation demonstrating that the STDDEV.S calculation is a better estimate for the standard deviation of a population when performed on a sample. Note that part of this task is to figure out the terminology in the previous sentence.
+The standard deviation of an array of numbers x is calculated using numpy as np.sqrt(np.sum((x - np.mean(x))**2)/len(x)). 
+However, Microsoft Excel has two different versions of the standard deviation calculation, STDDEV.P and STDDEV.S . 
+The STDDEV.P function performs the above calculation but in the STDDEV.S calculation the division is by len(x)-1 
+rather than len(x) . Research these Excel functions, writing a note in a Markdown cell about the difference between 
+them. Then use numpy to perform a simulation demonstrating that the STDDEV.S calculation is a better estimate for 
+the standard deviation of a population when performed on a sample. Note that part of this task is to figure out 
+the terminology in the previous sentence.
 ```
 
 
@@ -116,7 +122,8 @@ A population is the entire group that you want to draw conclusions about.
 While a sample is: 
 
 ```
-A sample is the specific group that you will collect data from. The size of the sample is always less than the total size of the population.
+A sample is the specific group that you will collect data from. The size of the sample is
+always less than the total size of the population.
 ```
 
 It is always a good idea to know what data set to use when getting the standard deviation. As we already know there is only one difference between the two formulas. The population data set uses the formula:  
