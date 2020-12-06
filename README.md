@@ -134,13 +134,7 @@ while the sample data set uses the formula:
 
 ```np.sqrt(np.sum((x - np.mean(x)) ** 2)/len(x)) -1```
 
-Consider the following:
-
-(A) You are an English teacher in a secondary school and you want to do a statistical analysis on all the exam results from your class in the last year. This will be a population data set because In this case you only need to get the data from your own class and not all the english classes in the school. The intent is only to estimate the students in your own class and because of this you have all the population.[2]
-
-(B) You are an English teacher in a secondary school and you want to do a statistical analysis on all the english exam results in the last year across the world. This will be a sample data set because the data set is huge. There is no way of getting the full data from such a huge dataset. In this case you will have to use a smaller dataset and make a generalization of your findings.[2]
-
-According to Excel, It is better to use the population dataset because it gets the standard deviation of the entire population. The syntax for using the population sample data is "STDEV.P(number1,number2,...)". The syntax for for the sample data is very similar but the p is replaced by a s, "STDEV.S(number1,number2,...)".[3][4].
+The syntax for using the population sample data is "STDEV.P(number1,number2,...)". The syntax for for the sample data is very similar but the p is replaced by a s, "STDEV.S(number1,number2,...)".[3][4].
 
 There is a slight difference in the population and sample dataset. This can be seen in the code cell. The small difference in the answers allows the sample data to get a better mathematical estimate of the population. It statistically gives a better estimate than population due to it working with only a small sample than the entire population.
 
