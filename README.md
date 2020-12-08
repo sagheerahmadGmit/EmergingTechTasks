@@ -224,3 +224,16 @@ https://en.wikipedia.org/wiki/P-value
   
 [4]How to use stdev.s in excel:  
 [https://www.exceltip.com/statistical-formulas/how-to-use-stdev-s-function-in-excel.html]  
+
+#### Task: Use scikit-learn to apply k-means clustering to Fisher’s famous Iris data set.
+-------------------------------------------------------------------------------
+[1] Fishers Iris Dataset
+[https://en.wikipedia.org/wiki/Iris_flower_data_set]  
+  
+[2] Scikit Learn - KMeans Clustering Analysis with the Iris Data Set  
+[https://www.youtube.com/watch?v=asW8tp1qiFQ&ab_channel=DragonflyStatistics]  
+
+[3] kmeans-examples.ipynb  
+[https://github.com/ianmcloughlin/jupyter-teaching-notebooks/blob/master/kmeans-examples.ipynb]  
+  
+[4]
