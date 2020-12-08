@@ -36,6 +36,15 @@ the standard deviation of a population when performed on a sample. Note that par
 the terminology in the previous sentence.
 ```
 
+The fourth task is: 
+
+```
+Use scikit-learn to apply k-means clustering to Fisher’s famous Iris data set. 
+You will easily obtain a copy of the data set online. Explain in a Markdown cell 
+how your code works and how accurate it might be, and then explain how your model 
+could be used to make predictions of species of iris. 
+```
+
 
 Task One
 -------------------------------------------------------------------------------------------------------------------
@@ -139,6 +148,17 @@ The syntax for using the population sample data is "STDEV.P(number1,number2,...)
 There is a slight difference in the population and sample dataset. This can be seen in the code cell. The small difference in the answers allows the sample data to get a better mathematical estimate of the population. It statistically gives a better estimate than population due to it working with only a small sample than the entire population.
 
 
+Task Four
+-------------------------------------------------------------------------------------------------------------------
+
+#### Task:  Use scikit-learn to apply k-means clustering to Fisher’s famous Iris data set.
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+In task four we are required to use scikit-learn and apply k-means clustering to the famous Iris data set. The task starts off by explaining what the Iris data set is and what it is used for. After explaining the data set, we start the coding. We first import the different libraries and classes that we will be using. 
+
+I then load the data from the scikit-learn datasets. The data is then plotted and the different values ae shown properly. The graph has names on both axis and there is also a title.
+
+
 How to run
 -------------------------------------------------------------------------------------------------------------------
 
@@ -236,4 +256,5 @@ https://en.wikipedia.org/wiki/P-value
 [3] kmeans-examples.ipynb  
 [https://github.com/ianmcloughlin/jupyter-teaching-notebooks/blob/master/kmeans-examples.ipynb]  
   
-[4]
+[4] Use Scikit Learn - K Means Clustering Analysis with the Iris Data Set  
+[https://www.youtube.com/watch?v=I38fOLHC8zo&ab_channel=CodeCap]
