@@ -6,6 +6,10 @@ Introduction
 
 This Jupyter Notebook contains the tasks for the module "Emerging Technology" in 4th year Software Development Course. It is written in the Python programming language. It will contain the programs for the four different tasks that we will be given.
 
+This README gives a brief description and information about each task but the full code and the research used can be found in the jupyter notebook in this repository. This README will also demonstrate how to run this repository using cmd or cmder.
+
+The four tasks are as follow:
+
 The first task is: 
 
 ``` 
@@ -53,9 +57,7 @@ Task One
 
 According to the Oxford Dictionary a square root is a "a number which produces a specified quantity when multiplied by itself". All real numbers have two square roots, One positive and one negative. All square roots are written with the √ symbol. There are many ways to determine the the square root of a number. I will be discussing one of these methods and then trying to code a program that will be able to get the square root of a specified number and print it out to 100 decimal places.
 
-One of the ways we can calculate the square root of a number is by using Newton's Method.[1,2,3]. Newton's Method uses a specific formula, seen below, to calculate the square root. It is known an an iterative method and approximates roots of equations. The algorithm starts off by guessing the square root of the given number as x > 0. It then computes a more accurate guess by taking the derivative of f(x) to get f'(x) and plug it into the formula. We then repeat the formula until we get a better and more accurate guess. The problem that I encountered with this formula was that it does not print out the value to 100 decimal places. It prints out the first 52 values and the rest are left as Zeros.
-
-The formula shown below is another way of calculating the the square root of 2. The first thing the method is doing is setting the x value from the user to, x multiplied by 10 to the power of 200. This will take all the numbers from the right side of the decimal place and brings it to the left side. The method has 2 other variables, one is a variable used in the while loop while the other is a googol. The while loop keeps running until an accurate guess is made. Inside the while loop we are setting b to z and then calculating a better guess for z. The guess is using floor devision because we do not want any decimal places in the answer. The guess is also being bitshifted to the right, the bitshifting shifts the bits of the first operand right by the specified number of bits.[6] Once the guess is accurate the while loop stops and prints out the value. I first had it so the program prints the value z staright away but this was a problem because when it was printed out, the value was a big number with no decimal places. In order to add a decimal place the number had to be converted into a list and the . could be inserted then. The list is then joined together and printed out as a string.
+There are many ways that we can calculate the square root of 2 such as Newthon's Method and Eular's Method. All these methods are very efficient and good at getting the square root of 2 but they sometimes cannot print the value to 100 places. FOr example, Newthons method is only able to print out the values to 52 places.  I used a different formula to calculate the square root of 2 to 100 places. This formula uses a googol which is the largest number in the world and a while loop to estimate the answer. The code and research for this task can be found in the jupyter notebook.
 
 
 Task Two
@@ -78,7 +80,7 @@ stating the Chi-squared value based on it is approximately 24.6. <br>
 
 The chi squared tests are used to check if there is a statistical difference between the expected and observed frequencies in a contigency table. It tests the association between the two criteria of association.  
 
-I originally had the code that it would use the panda library to create a dataframe using the the relevant values and output the result. The table that was printed was very similar to the one shown above. The table and the values were saved in a variable called "data", which woud be used later by the scipy.stats library. I then realised that I was only allowed to use the scipy.stats library to perform the required calculations. I decided to change the code a little bit to better fit the requirements. I did this by creating a variable and adding the dataset from the table into it. The dataset was saved row by row: 
+I originally had the code that it would use the panda library to create a dataframe using the the relevant values and output the result. The table that was printed was very similar to the one shown above. The table and the values were saved in a variable called "data", which woud be used later by the scipy.stats library. I then realised that I was only meant to use the scipy.stats library to perform the required calculations. I decided to change the code a little bit to better fit the requirements. I did this by creating a variable and adding the dataset from the table into it. The dataset was saved row by row: 
 
 ```
 #data to be inserted into the columns
@@ -106,46 +108,24 @@ The expected frequencies are:
  [ 34.61538462  34.61538462  46.15384615  34.61538462]] 
  ```
  
-The chi squared value has been rounded to one decimal place. It was originally, 24.5712028585826.
-
-The library that was used for this task was te scipy.stats. This library contains a large number of probability distributions as well as a growing library of statistical functions.[6] The P value probability of obtaining test results at least as extreme as the results actually observed, under the assumption that the null hypothesis is correct. If the p value is greater than 0.05 that means the null hypothesis is true and if the value is less than or equal to 0.05 than the hypothesis should be rejected.[7]
-
-The code and results verify that the values are correct.
-
 
 Task Three
 -------------------------------------------------------------------------------------------------------------------
 
 #### Task: Research the excel functions and use numpy to perform a simulation demonstrating that the STDEV.S calculation is a better estimate for the standard deviation of a population when performed on a sample.
 -------------------------------------------------------------------------------------------------------------------------------------------
-When dealing with statistical data it is evident that there are two data sets that can be used to get the standard deviation. There are population and sample data sets. In this task I will try to differenciate between the two and try to explain why STDDEV.S calculation is a better estimate for the standard deviation of a population when performed on a sample.
+In the task 3 part of the notebook I explain what the difference between STDDEV.S and STDDEV.P is and show why STDDEV.S is better for calculation is a better estimate for the standard deviation of a population when performed on a sample. I carried out a calculation to test this hypothesis and show that STDEV.S is better. 
 
-Firstly lets get the defenition of both of them: [1]
+The testing showed that the sample calculation formula works better on a sample of the population rather than the population formula. The two formuals are the following: 
 
-A population is:
 
-```
-A population is the entire group that you want to draw conclusions about.
-```
+```Population: np.sqrt(np.sum((x - np.mean(x)) ** 2)/len(x))```
 
-While a sample is: 
+And
 
-```
-A sample is the specific group that you will collect data from. The size of the sample is
-always less than the total size of the population.
-```
+``` Sample: np.sqrt(np.sum((x - np.mean(x)) ** 2)/len(x)) -1```
 
-It is always a good idea to know what data set to use when getting the standard deviation. As we already know there is only one difference between the two formulas. The population data set uses the formula:  
-  
-```np.sqrt(np.sum((x - np.mean(x)) ** 2)/len(x))```
-
-while the sample data set uses the formula:  
-
-```np.sqrt(np.sum((x - np.mean(x)) ** 2)/len(x)) -1```
-
-The syntax for using the population sample data is "STDEV.P(number1,number2,...)". The syntax for for the sample data is very similar but the p is replaced by a s, "STDEV.S(number1,number2,...)".[3][4].
-
-There is a slight difference in the population and sample dataset. This can be seen in the code cell. The small difference in the answers allows the sample data to get a better mathematical estimate of the population. It statistically gives a better estimate than population due to it working with only a small sample than the entire population.
+There is a slight difference in the population and sample formula but this allows the sample data to get a better mathematical estimate of the population. It statistically gives a better estimate than population due to it working with only a small sample than the entire population.
 
 
 Task Four
