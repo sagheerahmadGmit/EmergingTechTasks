@@ -136,7 +136,11 @@ Task Four
 
 In task four we are required to use scikit-learn and apply k-means clustering to the famous Iris data set. The task starts off by explaining what the Iris data set is and what it is used for. After explaining the data set, we start the coding. We first import the different libraries and classes that we will be using. 
 
-I then load the data from the scikit-learn datasets. The data is then plotted and the different values ae shown properly. The graph has names on both axis and there is also a title.
+I then load the data from the scikit-learn datasets. The data is then plotted and the different values ae shown properly. The graph has names on both axis and there is also a title. I added the graphs using the matplotlib and there are two different kinds of plots. There is a scatter plot and a regular plot. The first graph was very generic and printed out all the values while the next few graphs contained colours to identify each cluster more easily. 
+
+I then create a few dummy points using numpy.linspace to create and return evenly spaced numbers over a specified interval. These values will be used for classification. I then use the Kmeans predict method to predict whether each value is going to be a part of cluster 0, 1 or 2. Depending on the predictions the clusters are given a specific colour. Next, I get the cluster centers and print them out to a graph also. 
+
+I also decided to print out a seaborn pairplot because we can use that to see how the three species are separataed from the each other across all feature combinations.
 
 
 How to run
@@ -227,14 +231,26 @@ https://en.wikipedia.org/wiki/P-value
 
 #### Task: Use scikit-learn to apply k-means clustering to Fisher’s famous Iris data set.
 -------------------------------------------------------------------------------
-[1] Fishers Iris Dataset
-[https://en.wikipedia.org/wiki/Iris_flower_data_set]  
-  
-[2] Scikit Learn - KMeans Clustering Analysis with the Iris Data Set  
-[https://www.youtube.com/watch?v=asW8tp1qiFQ&ab_channel=DragonflyStatistics]  
-
-[3] kmeans-examples.ipynb  
-[https://github.com/ianmcloughlin/jupyter-teaching-notebooks/blob/master/kmeans-examples.ipynb]  
-  
-[4] Use Scikit Learn - K Means Clustering Analysis with the Iris Data Set  
-[https://www.youtube.com/watch?v=I38fOLHC8zo&ab_channel=CodeCap]
+[1] Fishers Iris Dataset<br>
+[https://en.wikipedia.org/wiki/Iris_flower_data_set]<br>
+<br>
+[2] Scikit Learn - KMeans Clustering Analysis with the Iris Data Set<br>
+[https://www.youtube.com/watch?v=asW8tp1qiFQ&ab_channel=DragonflyStatistics]<br>
+<br>
+[3] kmeans-examples.ipynb<br>
+[https://github.com/ianmcloughlin/jupyter-teaching-notebooks/blob/master/kmeans-examples.ipynb]<br>
+<br>
+[4] Use Scikit Learn - K Means Clustering Analysis with the Iris Data Set<br>
+[https://www.youtube.com/watch?v=I38fOLHC8zo&ab_channel=CodeCap]<br>
+<br>
+[5] Pair Plot by Seaborn<br>
+[https://seaborn.pydata.org/generated/seaborn.pairplot.html] <br>
+<br>
+[6] The Iris Dataset <br>
+[https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html] <br>
+<br>
+[7] SkLearn Clusters <br>
+[https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html#sklearn.cluster.KMeans.fit] <br>
+<br>
+[8] Numpy Linspace <br>
+[https://numpy.org/doc/stable/reference/generated/numpy.linspace.html]<br>
