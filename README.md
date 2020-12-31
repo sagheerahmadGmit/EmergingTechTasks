@@ -146,18 +146,20 @@ I also decided to print out a seaborn pairplot because we can use that to see ho
 How to run
 -------------------------------------------------------------------------------------------------------------------
 
-In order to run these tasks please do the following:
+In order to run these tasks please do the following in either cmd or cmder:
 
 Clone this repository:
 ```
 git clone https://github.com/sagheerahmadGmit/EmergingTechTasks
 ```
-
-After cloning, open up the terminal and type:
+After cloning, cd to the task folder 
+```
+cd EmergingTechTasks
+```
+In the terminal type:
 ```
 jupyter notebook
 ```
-
 Open the tasks notebook and run the cells by either:
 ```
 shift enter
