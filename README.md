@@ -148,6 +148,10 @@ How to run
 
 In order to run these tasks please do the following in either cmd or cmder:
 
+```
+Have anaconda and python installed.
+```
+
 Clone this repository:
 ```
 git clone https://github.com/sagheerahmadGmit/EmergingTechTasks
@@ -168,6 +172,8 @@ or
 ```
 press kernal at the top of the notebook and press "restart and run all
 ```
+
+![](https://github.com/sagheerahmadGmit/EmergingTechTasks/Gif/tasks.gif)
 
 
 Research
