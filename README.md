@@ -173,7 +173,7 @@ or
 press kernal at the top of the notebook and press "restart and run all
 ```
 
-![](https://github.com/sagheerahmadGmit/EmergingTechTasks/Gif/tasks.gif)
+![](https://github.com/sagheerahmadGmit/EmergingTechTasks/blob/main/Gif/tasks.gif)
 
 
 Research
